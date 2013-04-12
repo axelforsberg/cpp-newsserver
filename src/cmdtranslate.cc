@@ -3,11 +3,11 @@
 #include "databaseinterface.h"
 #include "cmdtranslate.h"
 #include "servercoder.h"
+#include "protocol.h"
 
 #include <vector>
 #include <string>
 #include <sstream>
-#include "protocol.h"
 
 using namespace std;
 using namespace protocol;

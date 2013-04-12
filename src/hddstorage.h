@@ -48,8 +48,6 @@ namespace client_server{
 			
 			std::string NG_COUNTER_LOG = "./filesystem/counterlog";
 			
-			std::string ART_COUNTER_LOG = "/counterlog";
-			
 			size_t counter = 0;
 	};
 }

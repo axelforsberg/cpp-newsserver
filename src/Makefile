@@ -5,7 +5,7 @@
 # Compiler and compiler options:
 DEBUG     = false
 CXX       = g++
-CC	  = g++
+CC	  	  = g++
 CXXFLAGS  = -pipe -O2 -Wall -W -ansi -pedantic-errors
 CXXFLAGS += -std=c++11 -Wmissing-braces -Wparentheses -Wold-style-cast
 ROOTDIR   = ./

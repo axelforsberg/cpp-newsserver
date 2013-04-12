@@ -4,7 +4,6 @@
 
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <iostream>
 #include <dirent.h>
 #include <sstream>
 #include <cstdio>
