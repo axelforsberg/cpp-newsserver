@@ -122,6 +122,7 @@ void printHelp(){
 	cout <<"  * list_art    <- To list articles in a newsgroup" <<endl;
 	cout <<"  * delete_art  <- To delete an article" << endl;
 	cout <<"  * get_art     <- To read an article" << endl;
+	cout <<"  * exit        <- To disconnect for server" << endl;
 }
 
 /* 
@@ -180,6 +181,8 @@ int main(int argc, char* argv[]) {
 					exchangeData(cc, conn, reqMsg);
 				} else if(reqMsg[0] == "list_ng"){
 					exchangeData(cc, conn, reqMsg);
+				} else if(reqMsg[0] == "exit"){
+					return 0;
 				} else {
 					cout << "Undefined command" << endl;
 					cout << "Type help to list available commands" << endl;
