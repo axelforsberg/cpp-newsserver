@@ -36,8 +36,8 @@ namespace client_server {
 	}
 
 	/*
-	 * List all newsgroup
-	 * Returns a vector<string> with all numbers and names och the newsgroup
+	 * List all newsgroups
+	 * Returns a vector<string> with all numbers and names on the newsgroups
 	 */
 	vector<string> RAMStorage::listNewsGroups(){
 
@@ -76,7 +76,7 @@ namespace client_server {
 
 	/*
 	 * Delete a newsgroup
-	 * Returns true if a newsgroup existed with the number
+	 * Returns true if a newsgroup existed with the specified number
 	 */
 	bool RAMStorage::deleteNewsGroup(const size_t& nbr){
 		auto it = find_if(ng.begin(),ng.end(),[&](NewsGroup& n){
@@ -93,7 +93,7 @@ namespace client_server {
 
 	/*
 	 * Create an article in a specified newsgroup
-	 * Returns true if a newsgroup existed with the number.
+	 * Returns true if a newsgroup existed with the specified number.
 	 */	
 	bool RAMStorage::createArticle(const size_t& nbr, const string& title, const string& author, const string& content){
 		auto it = find_if(ng.begin(),ng.end(),[&](NewsGroup& n){ 
