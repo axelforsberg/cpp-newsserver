@@ -15,11 +15,11 @@ using namespace protocol;
 namespace client_server{
 	
 	/* 
-	 * This function takes a encoded message in 
-	 * Decode the message and Interprents it
-	 * Creates an response containing appropriate data 
-	 * Encodes the response
-	 * Returns the encoded response
+	 * This function takes a encoded message in. 
+	 * Decode the message and Interprents it.
+	 * Creates an response containing appropriate data. 
+	 * Encodes the response.
+	 * Returns the encoded response.
  	 */
 	vector<unsigned char> CmdTranslate::execute(const vector<unsigned char>& encodedMsg){
 		vector<string> decodedMsg = sc.serverDecode(encodedMsg);
