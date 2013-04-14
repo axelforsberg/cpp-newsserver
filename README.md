@@ -1,11 +1,28 @@
 cpp-newsserver
 ==============
 
-Newsserver is a project in a C++programming course @ LTH.
+Newsserver is a project in a C++programming course @ LTH 
 
-"make" in /src to compile.
+created by:
+Axel Forsberg
+Simon Johansson
 
-"newsserver portnbr" in src to run server
+Quick start guide:
 
-"newsclient ipaddress portnbr" in src to run client
+1)
+$ make 
+to compile two versions of server (hdd/ram) and one version of the client.
+The runnable files will be placed in the /bin folder
+
+2a)
+$ newsserver_hdd portnbr 
+in /bin folder to run server with hddstorage option.
+
+2b)
+$ newsserver_ram portnbr
+in /bin folder to run server with ramstorage option
+
+3)
+$ newsclient ipaddress portnbr 
+in binfolder to run client
 
