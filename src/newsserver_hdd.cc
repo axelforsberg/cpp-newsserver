@@ -1,7 +1,6 @@
-/* newsserver.cc */
+/* newsserver_hdd.cc */
 
 #include "hddstorage.h"
-#include "ramstorage.h"
 #include "cmdtranslate.h"
 #include "server.h"
 #include "connection.h"
@@ -59,7 +58,6 @@ int main(int argc, char* argv[]){
 	Server server(atoi(argv[1]));
 	
 	/* CHANGE HERE BETWEEN THE USE OF A RAM/HDD STORAGE SOLUTION */
-	//RAMStorage ds;
 	HDDStorage ds;
 
 	CmdTranslate cmd(ds);	
