@@ -21,6 +21,9 @@ namespace client_server {
 	 * Creates the "filesystem" directory if it not exists
 	 */	
 	HDDStorage::HDDStorage(){
+		ROOT_DIR = "./filesystem/";
+		NG_COUNTER_LOG = "./filesystem/counterlog";
+		
 		DIR *dir = opendir (ROOT_DIR.c_str());
 		if(dir == 0){
 			mkdir(ROOT_DIR.c_str(),S_IRWXU);
@@ -199,7 +202,7 @@ namespace client_server {
 				stringstream s4;
 				s4 << input.rdbuf();
 				string content = s4.str();
-				content.pop_back();
+				content.erase(content.length()-1));
 				result.push_back(content);
 		
 				return result;
