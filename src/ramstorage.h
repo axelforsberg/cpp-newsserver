@@ -32,7 +32,7 @@ namespace client_server{
 			
 		private:
 			std::vector<NewsGroup> ng;
-			size_t counter = 0;
+			size_t counter;
 	};
 }
 #endif
