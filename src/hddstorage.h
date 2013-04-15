@@ -44,9 +44,9 @@ namespace client_server{
 			
 			std::vector<std::string> getFile(std::string ngName, const size_t& nbr);
 			
-			std::string ROOT_DIR = "./filesystem/";
+			std::string ROOT_DIR;
 			
-			std::string NG_COUNTER_LOG = "./filesystem/counterlog";
+			std::string NG_COUNTER_LOG;
 	};
 }
 #endif
