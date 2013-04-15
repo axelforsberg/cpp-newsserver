@@ -47,8 +47,6 @@ namespace client_server{
 			std::string ROOT_DIR = "./filesystem/";
 			
 			std::string NG_COUNTER_LOG = "./filesystem/counterlog";
-			
-			size_t counter = 0;
 	};
 }
 #endif
