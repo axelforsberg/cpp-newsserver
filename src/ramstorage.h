@@ -14,7 +14,9 @@ namespace client_server{
 	class RAMStorage : public DatabaseInterface {
 
 		public:
-			RAMStorage(){};
+			RAMStorage(){
+				counter = 0;
+			};
 
 			std::vector<std::string> listArticles(const size_t& nbr);
 
